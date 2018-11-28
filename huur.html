@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="nl">
+	<head>
+		<meta charset="utf-8">
+		<link href="style.css" type="text/css" rel="stylesheet"> <!--Link naar css bestand-->
+        <link rel="icon" type="image/png" href="images/favicon.png" sizes="32x32" /> <!--Favicon (mini logo naast de title van de website)-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!--Font awesome icoontjes zoals facebook en twitter logo worden hiermee geladen-->
+        <link href="https://fonts.googleapis.com/css?family=Nunito:400,600,700,800,900" rel="stylesheet"> <!--Lettertype van google fonts-->
+        <script type="text/javascript" src="interaction.js"></script> <!--Link naar JavaScript bestand-->
+		<title>Huur</title>
+	</head>
+	<body id="huur">
+		<div id="page">
+            <!--de pijl in de footer linkt naar de id="top" zodat de bezoeker naar de top gaat als die erop klikt-->
+			<header class="huur" id="top">
+                <!--Logo van het Imperium Theater die naar de homepagina gaat als de bezoeker erop klikt-->
+                <a href="home.html"><img src="images/Logo.png" alt="Logo Imperium Theater" id="logo"/></a>
+                <!--begin navigatie-->
+				<nav>
+                    <ul>
+                        <li><a href="home.html"><em>Home</em></a>
+                            <ul>
+                                <li><a href="home.html#over">Over ons</a></li>
+                                <li><a href="home.html#locatie">Locatie</a></li>
+                                <li><a href="home.html#contact">Contact</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="huur.html" class="current-nav"><em>Huur</em></a>
+                            <ul>
+                                <li><a href="huur.html#huisregels">Huisregels</a></li>
+                                <li><a href="huur.html#voorwaarden">Voorwaarden</a></li>
+                                <li><a href="huur.html#kosten">Kosten</a></li>
+                                <li><a href="huur.html#huur-aanvraag">Huur aanvragen</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="faciliteiten.html"><em>Faciliteiten</em></a>
+                            <ul>
+                                <li><a href="faciliteiten.html#toneel">Toneel</a></li>
+                                <li><a href="faciliteiten.html#decor">Decor</a></li>
+                                <li><a href="faciliteiten.html#licht">Licht</a></li>
+                                <li><a href="faciliteiten.html#projectie">Projectie</a></li>
+                                <li><a href="faciliteiten.html#geluid">Geluid</a></li>
+                                <li><a href="faciliteiten.html#afluistering">Afluistering</a></li>
+                                <li><a href="faciliteiten.html#overig">Overig</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="fotoimpressie.html"><em>Fotoimpressie</em></a>
+                            <ul>
+                                <li><a href="fotoimpressie.html#theater">Theater</a></li>
+                                <li><a href="fotoimpressie.html#voorstellingen">Voorstellingen</a></li>
+                                <li><a href="fotoimpressie.html#posters">Posters</a></li>
+                            </ul>
+                        </li>
+                        <!--Begin zoek balk-->
+                        <li>
+                            <form class="search" action="<http://www.example.org/search.php">
+                            <input class="search-input" type="search" name="search" placeholder="Zoeken..."/>
+                            <div class="search-submit">
+                                 <button id="search-icon"><i class="fa fa-search"></i></button>
+                            </div>
+                            </form>
+                        </li>
+                        <!--Einde zoek balk-->
+                    </ul>
+                </nav>
+                <!--einde navigatie-->
+                <!--begin shortcut over huren-->
+                <div class="shortcut-huur">
+                    <p id="korte-info">
+                        Theater Imperium is een klein vlakkevloer theater in het hart van Leiden. de Toneelgroep Imperium brengt vier producties per jaar, in oktober, december, februari en mei. Ze duren, op- en afbouw meegerekend, vijf weken per productie. De rest van het jaar verhuurt Imperium het theater aan andere toneel-, dans- en muziekgroepen. Ook voor Open Podia en discussiegroepen is het een geschikte ruimte.
+                    </p>
+                    <ul class="opsomming">
+                        <li>Een intieme theaterzaal</li>
+                        <li>80 zitplaatsen</li>
+                        <li>Een ruime kleedkamer</li>
+                        <li>Een gezellige foyer met bediening en bar</li>
+                        <li>Professionele licht- en geluidsinstallatie</li>
+                    </ul>
+                    <!--Button die linkt naar het huur aanvraag gedeelte (formulier) van de huurpagina-->
+                    <a class="ghost-button" href="huur.html#huur-aanvraag">Nu huur aanvragen</a>
+                </div>
+                <!--einde shortcut naar huren-->
+                <!--Balk en pijl die linken naar het eerste gedeelte van de content van de pagina-->
+                <div class="scroll-down">
+                    <a href="huur.html#huisregels"><i class="fa fa-angle-down"></i></a>
+                </div>
+			</header>
+			<div id="content">
+                <section id="huisregels">
+                    <h1>Huisregels</h1>
+                        <ol>
+                            <li>De gebruikte ruimtes dienen opgeruimd te worden achtergelaten</li>
+                            <li>De bar blijft open tot twee uur na beëindiging van de voorstelling of tot zoveel later als de barmedewerkers kunnen/willen blijven</li>
+                            <li>Het theater wordt altijd afgesloten door de dienstdoende barmedewerker</li>
+                        </ol>
+                        <p>
+                            De bar is open van anderhalf uur voor tot minimaal anderhalf uur na de voorstelling; gezellig om voor te beschouwen en na te praten. <a href="fotoimpressie.html#theater">Hier een fotoimpressie van het theater</a>
+                            <br />
+                            Er is een professionele licht- en geluidsinstallatie aanwezig. Leden van onze techniekgroep helpen huurders bij het opbouwen en instellen van de apparatuur. Inclusief is techniekhulp bij opbouwen van licht en geluid en het uitleggen van de werking van de apparatuur. Meestal de avond voor de voorstelling vanaf 19.30 In het weekend op de morgen van de voorstelling. Op de speelavonden dienen huurders zelf voor de techniek te zorgen. <a href="faciliteiten.html#toneel">Hier staat een exacte beschrijving van onze technische faciliteiten</a>.
+                            <br />
+                            In de middag van de voorstellingsdag kan decor gebouwd en doorgelopen worden.
+                            Inclusief is ook een bemande foyer. Alle informatie over de voorstelling wordt gratis op onze website geplaatst. Op verzoek worden de persadressen en de posterhanglijst verzonden.
+                        </p>
+                </section>
+                <section id="voorwaarden">
+                    <!--transparant wit vlak bovenop de afbeelding om de tekst zo beter leesbaar te maken-->
+                    <div class="overlay-voorwaarden">
+                    <h1>Voorwaarden huur</h1>
+                    <h2>12 voorwaarden</h2>
+                        <!--Inhoud van eerste voorwaarde die zichtbaar word als er op de button 1. wordt geklikt-->
+                        <div id="term1" class="tabcontent">
+                            <p>1. De berekende huurprijs is inclusief het gebruik van kleedkamer, licht- en geluidsinstallatie</p>
+                        </div>
+                        <!--Inhoud van tweede voorwaarde die zichtbaar word als er op de button 2. wordt geklikt-->
+                        <div id="term2" class="tabcontent">
+                            <p>2. In de huurprijs is tevens inbegrepen 1 dagdeel beschikbaarheid van de toneelzaal ten behoeve van het uitwerken van het lichtplan en/of opbouw van het decor</p>
+                        </div>
+                        <!--Inhoud van derde voorwaarde die zichtbaar word als er op de button 3. wordt geklikt-->
+                        <div id="term3" class="tabcontent">
+                            <p>3. Huurder dient zelf zorg te dragen voor de reserveringen en/of voor- /kaartverkoop. Daarbij dient er op te worden toegezien dat niet meer dan 80 toeschouwers worden toegelaten</p>
+                        </div>
+                        <!--Inhoud van vierde voorwaarde die zichtbaar word als er op de button 4. wordt geklikt-->
+                        <div id="term4" class="tabcontent">
+                            <p>4. Schade aan gebouw of inboedel aangebracht door moedwillig of onzorgvuldig handelen van huurder zal op deze worden verhaald</p>
+                        </div>
+                        <!--Inhoud van vijfde voorwaarde die zichtbaar word als er op de button 5. wordt geklikt-->
+                        <div id="term5" class="tabcontent">
+                            <p>5. De dienstdoende technicus van verhuurder Imperium blijft altijd verantwoordelijk voor de goede staat van gebouw en inboedel, voor de veiligheid van alle aanwezigen en voor de voorkoming van overlast. Aanwijzingen door hem of haar gegeven, dienen te alle tijden te worden opgevolgd</p>
+                        </div>
+                        <!--Inhoud van zesde voorwaarde die zichtbaar word als er op de button 6. wordt geklikt-->
+                        <div id="term6" class="tabcontent">
+                            <p>6. Zonder overleg met de dienstdoende technicus van verhuurder mag op geen enkele wijze decor of enig object worden vastgemaakt in of aan vloeren, wanden, lichtgrid en/of plafonds  gordijnen of vloerbedekking verwijderd worden</p>
+                        </div>
+                        <!--Inhoud van zevende voorwaarde die zichtbaar word als er op de button 7. wordt geklikt-->
+                        <div id="term7" class="tabcontent">
+                            <p>7. De dienstdoende technicus van verhuurder is op avonden waarop opbouw of voorstellingen plaatsvinden niet eerder dan 19.30 uur aanwezig in het theater, tenzij anders wordt afgesproken. Werkzaamheden ten behoeve van huurder worden uiterlijk om 23.00 uur beëindigd, tenzij anders wordt afgesproken</p>
+                        </div>
+                        <!--Inhoud van achtste voorwaarde die zichtbaar word als er op de button 8. wordt geklikt-->
+                        <div id="term8" class="tabcontent">
+                            <p>8. Aan- en afvoer van decor en rekwisieten en de eventueel noodzakelijke opslag daarvan vindt plaats in overleg met de dienstdoende technicus en/ of de verhuurder</p>
+                        </div>
+                        <!--Inhoud van negende voorwaarde die zichtbaar word als er op de button 9. wordt geklikt-->
+                        <div id="term9" class="tabcontent">
+                            <p>9. De reservering van de in deze overeenkomst genoemde data is dan pas definitief wanneer een door huurder getekend exemplaar is terugontvangen. Wanneer uiterlijk vier weken na ondertekening van dit contract door verhuurder, geen getekend exemplaar is terugontvangen, vervalt de reservering</p>
+                        </div>
+                        <!--Inhoud van tiende voorwaarde die zichtbaar word als er op de button 10. wordt geklikt-->
+                        <div id="term10" class="tabcontent">
+                            <p>10. Tenzij hierboven onder de aanvullende afspraken anders is overeengekomen, dient de verschuldigde huurprijs uiterlijk twee weken na de laatste voorstellingsdatum te zijn voldaan</p>
+                        </div>
+                        <!--Inhoud van elfde voorwaarde die zichtbaar word als er op de button 11. wordt geklikt-->
+                        <div id="term11" class="tabcontent">
+                            <p>11. Wanneer een reservering wordt afgezegd binnen een termijn van vier weken voor de eerste voorstellingsdatum, blijft de huurder de volledige huurprijs verschuldigd. Op grond van bijzondere omstandigheden, ter beoordeling van het bestuur van Theater Imperium, kan van deze bepaling worden afgeweken.</p>
+                        </div>
+                        <!--Inhoud van twaalfde voorwaarde die zichtbaar word als er op de button 12. wordt geklikt-->
+                        <div id="term12" class="tabcontent">
+                            <p>12. Huurder draagt er zorg voor dat het te plaatsen decor voldoet aan de in de bijlage gestelde brand- en veiligheidsvoorschriften</p>
+                        </div>
+                        <!--De buttons met de cijfers van het aantal voorwaarden, waar op word geklikt om de voorwaarde te openen-->
+                        <div id="tab-buttons">
+                        <button class="tablink" onclick="openTerms('term1', this, '#AC6587')" id="defaultOpen">1.</button> <!--De defaultOpen zou ervoor moeten zorgen dat de eerste voorwaarde geopend is als de pagina word geladen-->
+                        <button class="tablink" onclick="openTerms('term2', this, '#AC6587')">2.</button>
+                        <button class="tablink" onclick="openTerms('term3', this, '#AC6587')">3.</button>
+                        <button class="tablink" onclick="openTerms('term4', this, '#AC6587')">4.</button>
+                        <button class="tablink" onclick="openTerms('term5', this, '#AC6587')">5.</button>
+                        <button class="tablink" onclick="openTerms('term6', this, '#AC6587')">6.</button>
+                        <button class="tablink" onclick="openTerms('term7', this, '#AC6587')">7.</button>
+                        <button class="tablink" onclick="openTerms('term8', this, '#AC6587')">8.</button>
+                        <button class="tablink" onclick="openTerms('term9', this, '#AC6587')">9.</button>
+                        <button class="tablink" onclick="openTerms('term10', this, '#AC6587')">10.</button>
+                        <button class="tablink" onclick="openTerms('term11', this, '#AC6587')">11.</button>
+                        <button class="tablink" onclick="openTerms('term12', this, '#AC6587')">12.</button>
+                        </div>
+                    </div>
+                </section>
+                <section id="kosten">
+                    <h1>Kosten</h1>
+                        <table>
+                            <tr>
+                                <th scope="col">Diensten</th>
+                                <th scope="col">&euro;</th>
+                            </tr>
+                            <tr>
+                                <td>Eenmalige voorstellingsdag</td>
+                                <td>xxx</td>
+                            </tr>
+                            <tr>
+                                <td>Terugkerende voorstelling, per dag</td>
+                                <td>xxx</td>
+                            </tr>
+                            <tr>
+                                <td>Extra oefenavond / generale repetitie*</td>
+                                <td>xxx</td>
+                            </tr>
+                            <tr>
+                                <td>Beamergebruik, eenmalig*</td>
+                                <td>xxx</td>
+                            </tr>
+                            <tr>
+                                <td>Beamergebruik, per dag na eerste gebruik*</td>
+                                <td>xxx</td>
+                            </tr>
+                            <tr>
+                                <td>Reserveringssysteem, per dag*</td>
+                                <td>xxx</td>
+                            </tr>
+                        </table>
+                    <p>*Optioneel</p>
+                </section>
+                <!--Lijn om zo onderscheid te maken tussen de twee secties, met css kon ik deze niet op de jusite manier vormgeven-->
+                <div class="seperator">
+                    <div class="seperator-line">
+                    </div>
+                </div>
+                <section id="huur-aanvraag">
+                    <h1>Huur aanvragen</h1>
+                    <p>Om het proces van de huuraanvraag zo spoedig mogelijk te laten verlopen word u gevraagd om een aantal vragen te beantwoorden met betrekking tot de theatervoorstelling en contactgegevens.</p>
+                    <!--Onsubmit zorgt ervoor dat de validatie door JavaScript wordt gedaan als het formulier wordt verzonden-->
+                    <form action="" onsubmit="return validateForm()" class="form">
+                    <fieldset>
+                        <legend><h2>Theatervoorstelling</h2></legend>
+                        <label for="freq"><h3>Frequentie huur</h3></label>
+                        <h4>Hoe vaak willen jullie de voorstelling houden?</h4>
+                        <br />
+                        <!--drop-down list box met 6 opties-->
+                        <select name="freq" id="freq" onblur="validateSelect(name)">
+                            <option value="1 keer">1 keer</option>
+                            <option value="2 keer">2 keer</option>
+                            <option value="3 keer">3 keer</option>
+                            <option value="4 keer">4 keer</option>
+                            <option value="5 keer">5 keer</option>
+                            <option value="Meer dan 5 keer">Meer dan 5 keer</option>
+                        </select>
+                        <!--feedforward-->
+                        <!--validatie regel-->
+                        <span class="validateError" id="freqError" class="feedforward-textfield">Je moet een frequentie selecteren </span>
+                        <h3>Gebruik van diensten</h3>
+                        <!--drie verschillende diensten met twee opties (radio buttons) namelijk "ja" of "nee"-->
+                        <div id="diensten">
+                            <div id="dienst1">
+                                <label for="rep"><h4>Generale repetitie</h4></label>
+                                <input type="radio" name="rep" id="ja" value="ja" onblur="validateRadio(id)" />
+                                <label for="ja">Ja</label>
+                                <input type="radio" name="rep" id="nee" value="nee" onblur="validateRadio(id)" />
+                                <label for="nee">Nee</label>
+                                <span class="validateError" id="repError" class="feedforward-textfield">Huren of niet?</span>
+                                <!--feedforward--> <!--validatie regel-->
+                            </div>
+                            <div id="dienst2">
+                                <label for="beamer"><h4>Beamer</h4></label>
+                                <input type="radio" name="beamer" id="ja" value="ja" onblur="validateRadio(id)" />
+                                <label for="ja">Ja</label>
+                                <input type="radio" name="beamer" id="nee" value="nee" onblur="validateRadio(id)" />
+                                <label for="nee">Nee</label>
+                                <span class="validateError" id="beamerError" class="feedforward-textfield">Huren of niet?</span>
+                                <!--feedforward--> <!--validatie regel-->
+                            </div>
+                            <div id="dienst3">
+                                <label for="reservering"><h4>Reserveringssysteem</h4></label>
+                                <input type="radio" name="reservering" id="ja" value="ja" onblur="validateRadio(id)" />
+                                <label for="ja">Ja</label>
+                                <input type="radio" name="reservering" id="nee" value="nee" onblur="validateRadio(id)" />
+                                <label for="nee">Nee</label>
+                                <span class="validateError" id="reserveringError" class="feedforward-textfield">Huren of niet?</span>
+                                <!--feedforward--> <!--validatie regel-->
+                                </div>
+                        </div>
+                        <h4>Tussen welke twee data wilt u de voorstelling houden?</h4>
+                        <br />
+                        <!--drie drop down list boxes met de opties dag, maand en jaar-->
+                        <label>Eerste datum</label>
+                            <select name="dag">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                                <option value="11">11</option>
+                                <option value="12">12</option>
+                                <option value="13">13</option>
+                                <option value="14">14</option>
+                                <option value="15">15</option>
+                                <option value="16">16</option>
+                                <option value="17">17</option>
+                                <option value="18">18</option>
+                                <option value="19">19</option>
+                                <option value="20">20</option>
+                                <option value="20">21</option>
+                                <option value="20">22</option>
+                                <option value="20">23</option>
+                                <option value="20">24</option>
+                                <option value="20">25</option>
+                                <option value="20">26</option>
+                                <option value="20">27</option>
+                                <option value="20">28</option>
+                                <option value="20">29</option>
+                                <option value="20">30</option>
+                                <option value="20">31</option>
+                            </select>
+                            <select name="maand">
+                                <option value="jan">Januari</option>
+                                <option value="feb">Februari</option>
+                                <option value="maa">Maart</option>
+                                <option value="apr">April</option>
+                                <option value="mei">Mei</option>
+                                <option value="jun">Juni</option>
+                                <option value="jul">Juli</option>
+                                <option value="aug">Augustus</option>
+                                <option value="sep">September</option>
+                                <option value="okt">Oktober</option>
+                                <option value="nov">November</option>
+                                <option value="dec">December</option>
+                            </select>
+                            <select name="jaar">
+                                <option value="'17">2017</option>
+                                <option value="'18">2018</option>
+                                <option value="'19">2019</option>
+                                <option value="'20">2020</option>
+                            </select>
+                        <!--drie drop down list boxes met de opties dag, maand en jaar-->
+                        <label>Uiterste datum</label>
+                            <select name="dag1">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                                <option value="11">11</option>
+                                <option value="12">12</option>
+                                <option value="13">13</option>
+                                <option value="14">14</option>
+                                <option value="15">15</option>
+                                <option value="16">16</option>
+                                <option value="17">17</option>
+                                <option value="18">18</option>
+                                <option value="19">19</option>
+                                <option value="20">20</option>
+                                <option value="20">21</option>
+                                <option value="20">22</option>
+                                <option value="20">23</option>
+                                <option value="20">24</option>
+                                <option value="20">25</option>
+                                <option value="20">26</option>
+                                <option value="20">27</option>
+                                <option value="20">28</option>
+                                <option value="20">29</option>
+                                <option value="20">30</option>
+                                <option value="20">31</option>
+                            </select>
+                            <select name="maand1">
+                                <option value="jan">Januari</option>
+                                <option value="feb">Februari</option>
+                                <option value="maa">Maart</option>
+                                <option value="apr">April</option>
+                                <option value="mei">Mei</option>
+                                <option value="jun">Juni</option>
+                                <option value="jul">Juli</option>
+                                <option value="aug">Augustus</option>
+                                <option value="sep">September</option>
+                                <option value="okt">Oktober</option>
+                                <option value="nov">November</option>
+                                <option value="dec">December</option>
+                            </select>
+                            <select name="jaar1">
+                                <option value="'17">2017</option>
+                                <option value="'18">2018</option>
+                                <option value="'19">2019</option>
+                                <option value="'20">2020</option>
+                            </select>
+                    </fieldset>
+                    <fieldset>
+                        <legend><h2>Contactgegevens</h2></legend>
+                        <h3>Gegevens Theatergroep</h3>
+                        <!--Invoer textveld-->
+                        <div id="theatergroep-gegevens1">
+                            <label for="groupName"><h4>Naam theatergroep</h4></label>
+                            <input type="text" name="name" id="name" placeholder="Imperium toneelgroep" onblur="validateGroupName(name)" />
+                            <!--feedforward-->
+                            <span id="groupNameError" class="feedforward-textfield">Je kan alleen alfabetische characters gebruiken</span>
+                            <!--validatie regel-->
+                        </div>
+                        <div id="theatergroep-gegevens2">
+                            <!--Drop down list box met drie opties-->
+                            <label for="size"><h4>Grootte van het gezelschap</h4></label>
+                            <select name="size" id="size" onblur="validateSelect(name)">
+                                <option value="klein">onder 10 personen</option>
+                                <option value="'middelmatig">10 - 20 personen</option>
+                                <option value="'groot">meer dan 20 personen</option>
+                            </select>
+                            <span class="validateError" id="sizeError" class="feedforward-textfield">Je moet een grootte selecteren </span>
+                            <!--feedforward--> <!--validatie regel-->
+                        </div>
+                        <br />
+                        <h3>Gegevens Contactpersoon</h3>
+                        <div id="naam-contactpersoon">
+                            <!--Invoer textveld-->
+                            <div id="voornaam">
+                                <label for="name1"><h4>Voornaam</h4></label>
+                                <input type="text" name="name1" id="name1" onblur="validateName1(name)" placeholder="Peter"/>
+                                <span id="name1Error" class="feedforward-textfield">Je kan alleen alfabetische characters gebruiken</span>
+                                <!--feedforward--> <!--validatie regel-->
+                            </div>
+                            <!--Invoer textveld-->
+                            <div id="achternaam">
+                                <label for="name2"><h4>Achternaam</h4></label>
+                                <input type="text" name="name2" id="name2" onblur="validateName2(name)" placeholder="Post" />
+                                <span id="name2Error" class="feedforward-textfield">Je kan alleen alfabetische characters gebruiken</span>
+                                <!--feedforward--> <!--validatie regel-->
+                            </div>
+                        </div>
+                        <div id="email-telefoonnummer">
+                            <!--Invoer textveld-->
+                            <div id="email-area">
+                                <label for="email"><h4>Email</h4></label>
+                                <input type="text" name="email" id="email" placeholder="name@example.com" onblur="validateEmail(value)" />
+                                <span id="emailError">Je moet een geldig email adres invoeren</span>
+                                <!--feedforward--> <!--validatie regel-->
+                            </div>
+                            <div class="nieuwsbrief-tooltip">
+                                <input type="checkbox" name="nieuwsbrief-checkmark" value="nieuwsbrief-checkmark" id="nieuwsbrief-checkmark" checked="checked" /> Nieuwsbrief
+                                <!--De tekst die verschijnt als de bezoeker over het woord "nieuwsbrief" hovert-->
+                                <span class="tooltiptext">
+                                        U krijgt eerst een email met daarin een link om te bevestigen dat u onze berichten wilt ontvangen.<br />
+                                        Nadat u op die link heeft geklikt bent u geabonneerd op onze nieuwsbrieven. <br />
+                                        Uitschrijven kan met een link die in elke nieuwsbrief wordt opgenomen.<br />
+                                </span>
+                            </div>
+                            <!--Invoer nummerveld-->
+                            <div id="phone-number">
+                                <label for="number"><h4>Telefoonnummer</h4></label>
+                                <input type="text" name="number" id="number" class="telefoon" placeholder="0698765432 / 010 414 5855" onblur="validateNumber(value)" />
+                                 <span class="feedforward-textfield">Je kan alleen nummers gebruiken</span>
+                                <!--feedforward--> <!--validatie regel-->
+                            </div>
+                        </div>
+                        <div id="voorkeur-contactopname">
+                            <!--Radio button met twee opties "telefoon" en "email"-->
+                            <h4>Voorkeur contactopname</h4>
+                                <input id="telefoon" type="radio" name="voorkeur"  value="telefoon" checked="checked"  />
+                                <label for="telefoon">Telefonisch</label>
+
+                                <input id="voorkeur-email" type="radio" name="voorkeur"  value="email" onblur="validateRadio(id)" />
+                                <label for="voorkeur-email">Per email</label>
+                        </div>
+                        <!--Invoer textarea-->
+                        <h3>Vragen en opmerkingen</h3>
+                        <label for="opmerkingen"><h4>Ruimte om je hart te luchten</h4></label>
+                        <textarea name="opmerkingen" placeholder="Vragen en opmerkingen kun je hier kwijt"></textarea>
+                    </fieldset>
+                    <fieldset id="form-submit"> 
+                        <!--Checkbox voor de voorwaarden-->
+                        <label for="terms"></label>
+                            <input type="checkbox" name="terms" id="accept" value="accept" onblur="validateCheckbox(id)" />
+                            <label for="accept">Ik heb de <a href="huur.html#voorwaarden">voorwaarden</a> gelezen en ik ga ermee akkoord</label>
+                        <span class="validateError" id="termsError" class="feedforward-textfield">Je moet onze voorwaarden accepteren om te kunnen huren</span>
+                        <br />
+                        <!--Verzendknop-->
+                        <input type="submit" id="submit" name="submit" value="Submit" />
+                    </fieldset>
+                    </form>
+                </section>
+			</div>
+			<footer>
+                <div id="footer" class="container">
+                    <div class="column1of4">
+                        <h3>Kom met ons in contact</h3>
+                        <p><em>Telefoon:</em><a href="tel:+31715141035"> 071 51 41 035</a></p>
+                        <p><em>Email:</em><a href="mailto:info@imperiumtheater.nl" target="_blank"> info@imperiumtheater.nl</a></p>
+                        <p>
+                            Kom met ons in contact en ervaar zelf de gezelligheid van het theater!
+                        </p>
+                    </div>
+                    <div class="column2of4">
+                        <h3>Volg ons</h3>
+                        <!--Fa fa font, twitter en facebook logo's-->
+                        <p>
+                            <a class="twitter" href="https://twitter.com/imperiumtheater" target="_blank"><i class="fa fa-twitter"></i></a> 
+                            <a class="facebook" href="https://www.facebook.com/ToneelgroepImperium?fref=ts" target="_blank" ><i class="fa fa-facebook"></i></a>
+                        </p>
+                    </div>
+                    <div class="column3of4" id="nieuwsbrief">
+                        <h3>Nieuwsbrief</h3>
+                        <form action="http://www.example.org/subscribe.php">
+                            <p>
+                                U ontvangt onze nieuwsbrief na het bevestigen van de bevestigingsemail.
+                            </p>
+                            <br />
+                            <br />
+                            <input class="nieuwsbrief-input" type="email" name="email" placeholder="Jouw email"/>
+                            <input type="submit" class="nieuwsbrief" value="Bevestig"/>
+                        </form>
+                    </div>
+                    <div class="column4of4">
+                        <p>©2017 Theater Imperium<p/>
+                        <p>Design and code by ©Lynette Martina<p/>
+                    </div>
+                    <!--Button en pijl die linken naar de header van de pagina-->
+                    <article id="scroll-up">
+                     <a href="huur.html#top">
+                        <i class="fa fa-angle-up"></i>
+                     </a>
+                    </article>
+                </div>
+			</footer>
+		</div>
+	</body>
+<html>

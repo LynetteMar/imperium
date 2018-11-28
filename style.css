@@ -1,0 +1,1515 @@
+/*van invloed op alle pagina's*/
+html{
+	background-color: #fcfcfc;
+    font-family: 'Nunito', sans-serif;
+}
+
+/*van invloed op alle pagina's*/
+body{
+    margin: 0%;
+}
+
+/*Scrollbar*/
+::selection{
+    background-color: #AC6587;
+    color: #fcfcfc;
+}
+
+
+body::-webkit-scrollbar{
+    width:5px;
+}
+
+body::-webkit-scrollbar-track-piece{
+    background-color: rgba(0,0,0,0.8);
+}
+
+body::-webkit-scrollbar-thumb{
+    background-color: rgba(0,0,0,0.8);
+    height: 5%;
+    border: 5px solid #d90243;
+    border-radius: 10px;
+    
+}
+/*Scrollbar*/
+
+/*Headers*/
+header.home{
+    height: 770px;
+    width: 100%;
+    background-image: url(images/sfeerfoto%20theater.jpg);
+    background-position: center ;
+    background-attachment: scroll;
+    background-size:cover;
+    display: inline-block;
+}
+
+header.faciliteiten{
+    height: 770px;
+    width: 100%;
+    background-image: url(images/licht.jpg);
+    background-position: center ;
+    background-attachment: scroll;
+    background-size:cover;
+    border: 1px;
+    display: inline-block;
+}
+
+header.huur{
+    height: 770px;
+    width: 100%;
+    background-image: url(images/dramatische-foto-op-de-vloer.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size:cover;
+    border: 0px;
+    display: inline-block;
+}
+
+header.fotoimpressie{
+    height: 770px;
+    width: 100%;
+    background-image: url(images/blije-40-plussers.jpg);
+    background-position: center ;
+    background-attachment: scroll;
+    background-size:cover;
+    border: 0x;
+    display: inline-block;
+}
+
+/*Headers*/
+
+/*HEADER*/
+header p{
+    text-align:center;
+}
+
+#logo{
+    width: 13%;
+    padding:3% 3% 3% 3%;
+    z-index:10;
+    position: absolute;
+    display: block;
+}
+
+@-webkit-keyframes thumb {
+	0% { -webkit-transform: scale(1); }
+	50% { -webkit-transform: scale(0.9); }
+	100% { -webkit-transform: scale(1); }
+}
+
+#logo:hover {
+	-webkit-animation-name: thumb;
+	-webkit-animation-duration: 200ms;
+	-webkit-transform-origin:50% 50%;
+	-webkit-animation-iteration-count: 2;
+	-webkit-animation-timing-function: linear;
+}
+
+/*HEADERS*/
+
+/*NAV*/
+nav{
+    background-color: rgba(0,0,0,.5);
+    position: relative;
+    float: right;
+    padding: 0px 0px 0px 180px;
+    width: 100%;
+    font-size: 24px;
+}
+
+nav ul{
+    list-style: none;
+    float: right;
+    margin: 0px;
+    padding: 0px;
+}
+
+nav > ul > li{
+    float: left;
+    padding-bottom: 0px;
+}
+
+/*Hover Imperium Rood over hele nav*/
+nav ul li a:hover{
+    color: #d90243;
+}
+
+nav ul:after {
+    content:'';
+    display: block;
+    clear: both;
+}
+
+/*Laat het submenu verschijnen*/
+nav ul li:hover > ul{
+    display: block;
+}
+/*Positionering Nav*/
+nav ul li a{
+    display: block;
+    color: #fcfcfc;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+    width: auto;
+}
+/*2 niveau menu*/
+nav ul ul{
+    display:none;
+    position: absolute;
+    top: 100%;
+    background-color: #39333b;
+    width: auto;
+    z-index: 1;
+}
+
+/*Nav pijltje*/
+nav ul ul:after {
+    width: 0px;
+    height: 0px;
+    top: -10px;
+    position: absolute;
+    margin-left: 20px;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid rgb(57,51,59);
+}
+
+/*3e niveau menu*/
+
+nav ul ul li{
+    position: relative;
+}
+
+nav ul ul ul{
+    left: 100%;
+    top: 0%;
+}
+
+.current-nav{
+    color: #d90243;
+}
+
+/*INTERACTIE NAVIGATIE*/
+
+/*search*/
+.search{
+    margin:8.7px;
+}
+
+.search-input{
+    display: inline-block;
+    border: none;
+    width: 120px;
+    padding: 8px;
+    font-size:16px;
+    color: #461329;
+    background: #fcfcfc;
+    text-align: left;
+    border-radius: 10px;
+    outline: none;
+    transition: background-color 0.2s ease-out, color 0.2s ease-out;
+}
+
+#search-icon{
+    background-color: rgba(0,0,0,0.0);
+    padding: 0px;
+    padding-right: 20px;
+    padding-left: 10px;
+    font-size: 25px;
+    color: #d90243;
+    border: 0px solid;
+    transition: background-color 0.2s ease-out, color 0.2s ease-out;
+}
+
+#search-icon:hover{
+    color: #AC6587;
+    transition: background-color 0.3s ease-in, color 0.3s ease-in;
+    cursor: pointer;
+}
+
+.search-submit {
+    display: inline-block;
+    width: auto;
+    padding: 0px;
+    font-size: 0px;
+    border: 0px solid #fff;
+    text-align: center;
+    outline: none;
+    text-decoration: none;
+}
+
+.search-submit:hover,
+.search-submit:active{
+    color: #000;
+}
+/*search*/
+/*NAV*/
+
+/*shortcuts naar huur*/
+.shortcut p{
+    color: #fcfcfc;
+    font-size: 20px;
+    padding: 0px 15% 0px 15%;
+    line-height: normal;
+}
+
+.shortcut{
+    background-color: rgba(255,255,255,0.3);
+    position: relative;
+    float: right;
+    padding: 0px 0px 0px 180px;
+    margin: 550px 0px 0px 0px; /*positie op de pagina*/
+    width: 100%;
+    height: auto;
+    font-size: 20px;
+    text-align:center;
+}
+/*shortcuts naar huur*/
+/*ghost button*/
+.ghost-button {
+    display: inline-block;
+    width: 200px;
+    padding: 8px;
+    color: #fcfcfc;
+    border: 1px solid #fcfcfc;
+    text-align: center;
+    border-radius: 10px;
+    outline: none;
+    text-decoration: none;
+    transition: background-color 0.2s ease-out, color 0.2s ease-out;
+    position: scroll;
+    margin: 0px 0px 20px 0px;
+    z-index: 1;
+}
+
+.ghost-button:hover,
+.ghost-button:active{
+    background-color: #fcfcfc;
+    color: #000;
+    transition: background-color 0.3s ease-in, color 0.3s ease-in;
+}
+/*ghost button*/
+
+/*scrolldown pijltje*/
+
+.scroll-down{
+    text-align:center;
+    width: 100%;
+    display: inline-block;
+    font-size:48px;
+    background-color: #fcfcfc;
+}
+
+.scroll-down a{
+    font-size: 48px;
+    color: #AC6587;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.scroll-down:hover{
+    background-color: #AC6587;
+}
+
+.scroll-down a:hover{
+    color: #fcfcfc;
+}
+
+/*Het pijltje in de scroll down balk*/
+.angle-down{
+    font-size:38px;
+    color:#AC6587;
+}
+
+.angle-down:hover{
+    font-size:38px;
+    color:#fcfcfc;
+}
+
+
+/*HEADER*/
+
+#home{
+    background-image: url(images/team.jpg);
+    background-position: center ;
+    background-attachment: fixed;
+    background-size:cover;
+    display: inline-block;
+}
+
+/*H1, H2, H3, H4, p, em, cite, section*/
+
+h1{
+    color: #39333b;
+    font-size: 24px;
+    text-align: center;
+    font-weight: 700;
+}
+
+h2{
+    color: #a4001e;
+    line-height: 1.3em;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+h3{
+    color: #AC6587;
+    font-size: 20px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    font-weight: 500;
+}
+
+h4{
+    color: #39333b;
+    font-size: 18px;
+    text-align: center;
+    font-weight: 800;
+}
+
+p{
+	color: #000;
+    font-size: 16px;
+    line-height: 2em;
+}
+
+section p a, form a{    
+    color: #AC6587;
+    text-decoration: none;
+}
+
+section p a:hover, form a:hover{    
+    color: #d90243;
+}
+
+em{
+    font-weight: bold;
+    font-style: normal;
+}
+
+cite{
+    font-style: normal;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+}
+
+section{
+    background-color:#fcfcfc;
+    text-align: center;
+}
+
+section p{
+    padding: 0px 15% 0px 15%;
+}
+
+section ol{
+    padding-left: 16%;
+    padding-right: 15%;
+}
+/*H1, H2, H3, H4, p, em, cite, section*/
+
+/*table*/
+
+table{
+    width: 70%;
+    margin-left: 15%;
+    margin-right: 15%;
+    padding: 10px;
+}
+
+table a{
+    color: black;
+    text-decoration: none;
+}
+
+table a:hover{
+    color: #AC6587;
+    text-decoration: none;
+}
+
+th{
+    color: rgba(172,101,135,0.8);
+    border-bottom: 1px solid rgba(172,101,135,0.3);
+}
+
+td{
+    border-bottom: 1px solid rgba(156,156,156,0.3);
+    text-align: left;
+    padding-left: 20px;
+}
+
+/*table*/
+
+/*begin seperator lijn op de home en huur pagina*/
+.seperator-line{
+    border-bottom: 1px solid grey;
+    width: 80%;
+    margin-left:10%;
+    margin-right:10%;
+    z-index; 1;
+}
+
+.seperator{
+    background-color: #fcfcfc;
+    width: 100%;
+}
+/*einde seperator lijn op de home en huur pagina*/
+
+
+/*arrow up*/
+
+#scroll-up{
+    visibility: hidden;
+    position: fixed;
+    top: 80%;
+    right: 50px;
+    padding: 0px;
+    margin: 0px;
+    width: 40px;
+    height: 30px;
+    padding-bottom: 10px;
+    border-radius: 10px;
+    background-color: #fcfcfc;
+    text-align: center;
+    -moz-box-shadow: 0 0 10px #9c9c9d;
+    -webkit-box-shadow: 0 0 10px #9c9c9d;
+    box-shadow: 0 0 10px #9c9c9d;
+}
+
+#scroll-up a{
+    font-size: 30px;
+    color: #AC6587;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#scroll-up:hover{
+    background-color: #AC6587;
+}
+
+#scroll-up a:hover{
+    color: #fcfcfc;
+}
+
+/*arrow up*/
+
+/*Homepagina*/
+.column1of2{
+    float:left;
+    width: auto;
+    margin-left:20%; 
+    margin-right:5%;
+    margin-top: 3%;
+    height: 250px;
+}
+
+.column2of2{
+    float:left;
+    width: 400px;
+    margin-left: 5%;
+    margin-right: 20%;
+    margin-top: 3%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    height: 250px;
+    text-align:left;
+}
+
+.column2of2 p{
+    padding: 0px;
+}
+
+/*Iframe*/
+.maps iframe{
+    pointer-events:none;/*zorgt ervoor dat de iframe opties zoals het inzoomen niet aanstaat*/
+}
+
+/*Jubileum logo*/
+
+#jubileumlogo {
+    width: 300px;
+    height:  auto;
+}
+
+/*secties homepagina*/
+#over{
+    padding-top: 10px;
+    margin-top: 10px;
+    height: 350px;
+    width: auto;
+    background-image: url(images/Banner%20imperium%2060%20jaar.png);
+    background-position: 4% 0%;
+    background-repeat: no-repeat;
+    background-size: 125px;
+    background-attachment: scroll;
+    display: block;
+    border-bottom: solid 1px #AC6587;
+}
+
+#jubileum{
+    margin-top: 325px;
+    height: 375px;
+    width: auto;
+    display: block;
+    border-top: solid 1px #AC6587;
+}
+
+#contact{
+    height: 400px;
+}
+
+#jubileum h2{
+    margin-top: 10px;
+    padding: 40px 0px 0px 0px;
+}
+
+#locatie{
+    margin-top: 0px;
+    padding: 10px 0px;
+}
+/*secties homepagina*/
+/*Homepagina*/
+
+/*Huurpagina*/
+/*shortcut naar huur aanvragen*/
+.shortcut-huur{
+    background-color: rgba(255,255,255,0.3);
+    position: relative;
+    float: right;
+    padding: 0px 0px 0px 180px;
+    margin: 300px 0px 0px 0px; /*positie op de pagina*/
+    width: 100%;
+    height: auto;
+    font-size: 20px;
+    text-align:center;
+}
+
+#korte-info{
+    font-size: 20px;
+    color: #fcfcfc;
+    text-align:center;
+    width: 60%;
+    margin: 5% 2%;
+    float: left;
+}
+
+.opsomming{
+    font-size: 20px;
+    color: #fcfcfc;
+    text-align: left;
+    float: left;
+    margin: 5% 2%;
+    line-height: 2em;
+    padding-left: 20px;
+}
+
+.opsomming li{
+    list-style: none;
+}
+
+.opsomming li:before{
+    content: '✓';
+    margin-left: 1em;
+    margin-right: .900em;
+}
+
+.opsomming ul{
+    list-style-type: none;
+    list-style-position: outside;
+    margin-left: 10px;
+    margin-right: 10px;
+    float: left
+}
+/*einde shortcut naar huur aanvragen*/
+
+/*witte overlay over de afbeelding waar de voorwaarden worden weergegeven*/
+.overlay-voorwaarden{
+    background-color: rgba(255,255,255,0.7);
+    padding-top: 10px;
+    height: 420px;
+}
+
+/*secties huurpagina*/
+#huur-aanvraag{
+    height: auto;
+    background-image: url('images/imperium-ballon.png');
+    background-repeat: no-repeat;
+    background-size: 180px;
+    background-attachment: fixed;
+    background-position: 80px 90px;
+}
+
+#huisregels{
+    line-height: 2em;
+    height: 550px;
+    margin-top: 10px;
+    padding-top: 10px;
+    background-image: url('images/imperium-ballon.png');
+    background-repeat: no-repeat;
+    background-size: 150px;
+    background-attachment: fixed;
+    background-position: 40px 30px;
+}
+
+#huisregels li{
+    text-align: left;
+    width: 580px;
+}
+
+#huisregels ol{
+    padding-left: 400px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#voorwaarden{
+    height: 430px;
+    background-color: #fcfcfc;
+    background-image: url('images/shock.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-top: 1px solid #AC6587;
+    border-bottom: 1px solid #AC6587;
+}
+
+#kosten{
+    background-image: url('images/imperium-ballon.png');
+    background-repeat: no-repeat;
+    background-size: 100px;
+    background-attachment: fixed;
+    background-position: 1200px 30px;
+}
+/*secties huurpagina*/
+
+/*TAB*/
+
+/*De opmaak van de tab buttons*/
+.tablink {
+    background-color: #fcfcfc;
+    color: #39333b;
+    float: left;
+    border: none;
+    border-radius: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+    outline: none;
+    cursor: pointer;
+    text-align: center;
+    font-size: 17px;
+    width: 50px;
+    height: 50px;
+}
+
+.tablink:hover, .tablink:active {
+    background-color: #39333b;
+    color:#fcfcfc;
+}
+
+/*Positie van de buttons(1. 2. etc) in relatie tot de pagina breedte*/
+#tab-buttons{
+    padding-left: 300px;
+}
+
+/*De inhoud van de tabs*/
+.tabcontent {
+    display: none;
+    padding: 50px;
+    text-align: center;
+    height: 150px;
+}
+
+/*Achtergrondkleur van de voorwaarden*/
+#term1, #term2, #term3, #term4, #term5, #term6, #term7, #term8, #term9, #term10, #term11, #term12{
+background-color: rgba(255,255,255,0.0);
+}
+/*Einde TAB*/
+
+/*Begin FORM*/
+
+/*Opmaak submit button*/
+.form input[type="submit"],
+.form input[type="button"]{
+    display: inline-block;
+    width: 80px;
+    padding: 8px;
+    font-size: 14px;
+    color: #fcfcfc;
+    background: #AC6587;
+    border: 0px solid #fff;
+    text-align: center;
+    border-radius: 10px;
+    outline: none;
+    text-decoration: none;
+    transition: background-color 0.2s ease-out, color 0.2s ease-out;
+}
+
+/*Opmaak submit button*/
+.form input[type="submit"]:hover,
+.form input[type="button"]:hover{
+    background-color: #fff;
+    color: #000;
+    transition: background-color 0.3s ease-in, color 0.3s ease-in;
+    cursor: pointer;
+}
+
+/*Breedte van het invoerveld van het telefoonnummer*/
+.telefoon{
+    width: 255px !important;
+}
+
+/*Opmaak van het hele form en hoe alles binnen het form staat*/
+.form {
+    max-width: 70%;
+    margin-top:10px;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-bottom: 10px;
+    border: none;
+    padding:0px;
+    font-family: 'Nunito', sans-serif;
+}
+
+label{
+    padding-right: 15px;
+}
+
+/*Opmaak van alle invoervelden en drop down list boxes*/
+.form input[type="text"],
+.form input[type="email"],
+.form input[type="number"],
+.form select 
+{
+    display: inline-block;
+    background-color: rgba(255,255,255,0.1);
+    outline: none;
+    border: 1px solid #AC6587;
+    height: 30px;
+    color: black;
+    border-radius: 10px;
+    line-height: 25px;
+    font-size: 16px;
+    margin-bottom: 10px;
+    margin-right: 15px;
+    font-family: 'Nunito', sans-serif;
+    padding-left: 15px;
+}
+/*Opmaak textarea*/
+.form textarea{
+    width: 70%;
+    height: 500px;
+    display: inline-block;
+    background-color: rgba(255,255,255,0.1);
+    outline: none;
+    border: 1px solid #AC6587;
+    height: 100px;
+    color: black;
+    border-radius: 10px;
+    line-height: 25px;
+    font-size: 16px;
+    margin-bottom: 10px;
+    margin-right: 15px;
+    font-family: 'Nunito', sans-serif;
+    padding-left: 15px;
+}
+
+/*De border word dikker als het veld geselecteerd is dus on focus*/
+.form input[type="text"]:focus,
+.form input[type="email"]:focus,
+.forminput[type="number"]:focus,
+.form textarea:focus,
+.form select:focus {
+    border: 2px solid #AC6587;
+}
+
+/*Opmaak van het text area zodat deze niet veranderd van grootte*/
+.form textarea{
+    resize:none;
+}
+
+/*Opmaak van de feedforward en feedback*/
+span{
+    display: block;
+    color: rgb(200,200,200);
+}
+
+/*Opmaak van de fieldsets*/
+fieldset{
+    margin-bottom: 20px;
+    border: 1px solid rgb(200,200,200);
+    border-radius: 10px;  
+}
+
+#form-submit{
+    border: none;
+}
+
+/*Positie van de drie diensten*/
+#dienst1, #dienst2, #dienst3{
+    width: 300px;
+    float: left;
+    margin: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+/*Breedte van de invoervelden*/
+#name, #email, #name1, #name2{
+    width: 400px;
+}
+
+/*Positie van nieuwbrief optie*/
+.nieuwsbrief-tooltip{
+    float: left;
+}
+
+/*Positie van email gedeelte en naam theatergroep*/
+#theatergroep-gegevens1, #email-area{
+    float: left;
+}
+
+/*Positie van voornaam*/
+#voornaam{
+    float: left;
+}
+
+/*Positie van achternaam*/
+#achternaam{
+    float: right;
+}
+
+/*Positie van telefoonnummer*/
+#phone-number{
+    float: right;
+    margin-left: 10px;
+}
+
+#voorkeur-contactopname{
+    clear: both;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+/*De hoogte van de div waar de gegevens in zitten*/
+#email-telefoonnummer, #naam-contactpersoon{
+    height: 175px;
+}
+
+/*Tooltip container*/
+.nieuwsbrief-tooltip {
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    color: #AC6587;
+    cursor: pointer;
+    margin-top: 100px;
+}
+
+/*Tooltip text*/
+.tooltiptext {
+    visibility: hidden;
+    width: 225px;
+    background-color: rgba(57,51,59, 0.9);
+    color: #fff;
+    text-align: left;
+    padding: 10px;
+    border-radius: 5px;
+
+    /*Positie van de tooltip text*/
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -60px;
+
+    /*Fade in tooltip*/
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+/*Tooltip pijltje*/
+.nieuwsbrief-tooltip .tooltiptext:after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 30%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: rgb(57,51,59) transparent transparent transparent;
+}
+
+/*Laat de tooltip text zien als er over de container word gehovert*/
+.nieuwsbrief-tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
+
+/*Einde FORM*/
+/*Huurpagina*/
+
+/*Faciliteitenpagina*/
+
+#toneel{
+    height: 230px;
+    margin-bottom: 0px;
+    margin-top: 10px;
+    padding-top: 10px;
+    background-color: rgb(240,240,240);
+}
+
+#decor{
+    height: 260px;
+    background-color: #fcfcfc;
+    margin-top: 0px;
+    padding-top: 5px;
+}
+
+#licht{
+    height: auto;
+    background-color: rgba(252,252,252,0.8);
+    background-image: url('images/lichttechniek.jpg');
+    background-position: center;
+    background-attachment: fixed;
+    background-size:cover;
+    display: inline-block;
+}
+
+#geluid{
+    height: auto;
+    background-image: url('images/techniek/geluidtechniek.jpg');
+    background-position: center;
+    background-attachment: fixed;
+    background-size:cover;
+    display: inline-block;
+    background-color: rgba(0,0,0,0.0)
+}
+
+#projectie{
+    height: auto;
+    padding-top: 15px;
+    background-color: #fcfcfc;
+}
+
+#afluistering{
+    height: 200px;
+    padding-top: 10px;
+    background-color: #fcfcfc;
+}
+
+#overig{
+    height: 350px;
+    padding-top: 10px;
+    background-color: #fcfcfc;
+}
+
+.overlay-white{
+    background-color: rgba(255,255,255,0.7);
+    padding-top: 10px;
+    height: auto;
+}
+
+.overlay-black{
+    background-color: rgba(0,0,0,0.7);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    height: auto;
+}
+
+/*ACCORDION*/
+/*Button*/
+button.accordion {
+    font-family: 'Nunito';
+    background-color: rgba(172,101,135,0.3);
+    border-bottom: solid 1px #AC6587;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    color: black;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    outline: none;
+    transition: 0.4s;
+    height: 90px;
+}
+
+/*Verandering van de achtergrondkleur van de button als er wordt gehovert*/
+button.accordion.active, button.accordion:hover {
+    background-color: rgba(172,101,135,0.5);
+}
+
+/*Het panel dat niet zichtbaar is maar zichtbaar word als er op de button wordt geklikt*/
+div.panel {
+    padding: 0 18px;
+    background-color: rgba(252,252,252,0.1);
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+.accordion h3{
+    color: #AC6587;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.accordion h3:hover{
+    color: #fcfcfc;
+}
+
+button.accordion:after {
+    content: '\FE40'; /*Unicode pijl naar beneden*/
+    font-size: 40px;
+    font-family: none;
+    font-weight: 900;
+    color: #AC6587; 
+}
+
+/*Als er op de button is geklikt verschijnt dit*/
+button.accordion.active:after {
+    content: '\FE3F'; /*Unicode pijl naar boven*/
+    position: relative;
+    top: -20px;
+}
+
+/*ACCORDION*/
+
+/*Faciliteitenpagina*/
+
+/*Fotoimpressiepagina*/
+#theaterzaal h1{
+    padding-top: 30px;
+}
+
+/*De div waar de slideshow in zit*/
+#theaterzaal{
+    margin-top: -10px;
+    background-image: url('images/mars.jpg');
+    background-position: center ;
+    background-attachment: fixed;
+    background-size: cover;
+    border-bottom: solid 1px #AC6587;
+}
+
+/*De witte overlay die ervoor zorgt dat de afbeeldingen beter te zien zijn*/
+#overlay-theater{
+    background-color: rgba(255,255,255,0.8);
+    height: auto;
+    padding-bottom: 30px;
+}
+
+/*De section met de tekst over een kijkje nemen*/
+#kijkje{
+    padding-top: 30px;
+    padding-bottom: 40px;
+}
+
+#aside-links{
+    float:right;
+    background-image: url('images/chick.jpg');
+    background-position: right;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-color: #39333b;
+    height: 705px;
+    width: 25%;
+    margin-top: 18px;
+    margin-right: 15px;
+}
+
+#aside-links h2{
+    color: black;
+    line-height: 1.3em;
+    font-weight: 300;
+    margin: 5px;
+}
+
+#aside-links li{
+    list-style-type: none;
+    font-size: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-right: 40px;
+    line-height: 2em;
+    margin-bottom: 20px;
+    background-color: rgba(255,255,255,0.8)
+}
+
+#aside-links li a{
+    display: block;
+    color: #AC6587;
+    text-decoration: none;
+    padding: 10px 70px;
+}
+
+#aside-links li a:hover{
+    background-color: rgba(172,101,135,0.8);
+    color: #fcfcfc;
+}
+
+/*De sectie met de afbeeldingen en de aside links erin*/
+.images{
+    background-color: #fcfcfc;
+    margin-bottom: 50px;
+}
+
+/*IMAGES*/
+
+/*De caption text van de 9 afbeeldingen*/
+figcaption{
+    color: #fcfcfc;
+    width: auto;
+    margin-top: -30px;
+}
+
+.img-row > .img-col {
+  padding: 19px;
+}
+
+.img-row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.img-col {
+    float: left;
+    width: 22%;
+}
+
+/*De afbeeldingen in de kolommen*/
+.img-col img{
+    width: 300px;
+    height: 210px;  
+    opacity: 1;
+	-webkit-transition: .1s ease-in-out;
+	transition: .1s ease-in-out;
+}
+
+.img-col img:hover{
+    cursor: pointer;
+    opacity: .5;
+}
+
+/*De afbeeldingen in de modal*/
+.myModalSlides img{
+    width: 100%;
+    height: 600px;
+}
+
+/*Modal achtergrond*/
+.modal{
+  display: none;
+  position: fixed;
+  z-index: 10;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.6);
+}
+
+/*Modal inhoud*/
+.modal-content{
+  position: relative;
+  margin: auto;
+  padding: 0;
+  width: 60%;
+  max-width: 1200px;
+}
+
+/*Het kruisje dat de modal sluit*/
+.close{
+    color: #fcfcfc;
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    font-size: 70px;
+}
+
+.close:hover,
+.close:focus{
+    color: #d90243;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.myModalSlides {
+  display: none;
+}
+
+/*Begin SLIDESHOW*/
+
+*.slideshow-container{box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+    width: 700px;
+    position: relative;
+    margin: auto;
+}
+
+.mySlides {
+    display: none;
+}
+
+/*Volgende en vorige buttons*/
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 0%;
+    bottom: 10%;
+    padding-top: 30%;
+    padding-bottom: 35.1%;
+    padding-left: 1%;
+    padding-right: 1%;
+    width: auto;
+    background-color: rgba(255,255,255,0.2);
+    color: white;
+    font-weight: bold;
+    font-size: 50px;
+    transition: 0.6s ease;
+}
+
+/*Positie van de pijlen links en rechts*/
+.next {
+    right: 0;
+}
+
+.prev{
+    left: 0;
+}
+
+/*verandert de kleur van de achtergrond van de pijlen on hover*/
+.prev:hover {
+    padding-right: 2%;
+    color: white;
+    background-color: rgba(172,101,135,0.5)
+}
+
+.next:hover {
+    padding-left: 2%;
+    color: white;
+    background-color: rgba(172,101,135,0.5)
+}
+
+/*Omschrijving van de afbeelding*/
+.text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding-bottom: 12px;
+    padding-top: 12px;
+    position: absolute;
+    bottom: 6px;
+    width: 100%;
+    text-align: center;
+    background-color: rgba(57,51,59,0.6)
+}
+
+/*Nummer text (1/3 etc)*/
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+/*Opmaak van de afbeeldingen in de slider*/
+#theaterzaal img{
+    width: 100%;
+    height: 500px;
+}
+
+/*Opmaak van de rondjes/dots*/
+.dot {
+  cursor:pointer;
+  height: 13px;
+  width: 13px;
+  margin: 0 2px;
+  background-color: #39333b;
+    border: 0.1px solid #39333b;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+    background-color: #AC6587;
+    border: 0.1px solid #39333b;
+}
+
+/*Einde SLIDESHOW*/
+/*Fotoimpressiepagina*/
+
+/*Begin FOOTER*/
+
+/*Opmaak algehele footer*/
+footer::selection{
+    background-color: #75274b;
+    color: #fcfcfc;
+}
+
+
+#footer.container{
+    display: block;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 2%;
+}
+
+footer{
+    background-color: black;
+    height: 360px;
+    width: 100%;
+    padding: 0px 0px 0px 0px;
+}
+
+footer p{
+    color: #fcfcfc;
+}
+
+footer h3{
+    text-align: left;
+}
+
+footer a{
+    color: #fcfcfc;
+}
+/*Opmaak algehele footer*/
+
+/*Begin CONTACT kolom*/
+
+.column1of4{
+    width: 300px;
+    float: left;
+    padding: 10px;
+    margin: 10px;
+}
+
+.column1of4 a{    
+    color: #fcfcfc;
+    text-decoration: none;
+}
+
+.column1of4 a:hover{    
+    color: #9c9c9d;
+}
+
+/*Einde CONTACT kolom*/
+
+/*Begin VOLG ONS kolom*/
+
+.column2of4{
+    width: auto;
+    float: left;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    text-align: center;
+}
+
+/*Opmaak van facebook en twitter icoon*/
+.column2of4 a{
+    margin: 5px;
+}
+
+/*Opmaak van het facebook icoon*/
+.facebook{
+    font-size:40px;
+    color:#fcfcfc;
+}
+
+/*Opmaak van het facebook icoon*/
+.facebook:hover{
+    color:#3b5998;
+}
+
+/*Opmaak van het twitter icoon*/
+.twitter{
+    font-size:40px;
+    color:#fcfcfc;
+}
+
+/*Opmaak van het twitter icoon*/
+.twitter:hover{
+    color:#1da1f2;
+}
+
+/*Einde VOLG ONS kolom*/
+
+/*Begin NIEUWSBRIEF kolom*/
+.column3of4{
+    width: 350px;
+    float: left;
+    padding: 10px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 65px;
+}
+
+/*Opmaak nieuwsbrief input*/
+.nieuwsbrief-input{
+    display: inline-block;
+    width: 200px;
+    padding: 8px;
+    font-size:14px;
+    color: #461329;
+    background: #fcfcfc;
+    border: 0px solid #fff;
+    text-align: center;
+    border-radius: 10px;
+    outline: none;
+    transition: background-color 0.2s ease-out, color 0.2s ease-out;
+}
+
+/*Opmaak nieuwsbrief bevestigings button in de footer*/
+.nieuwsbrief {
+    display: inline-block;
+    width: 80px;
+    padding: 8px;
+    font-size: 14px;
+    color: #fcfcfc;
+    background: #AC6587;
+    border: 0px solid #fff;
+    text-align: center;
+    border-radius: 10px;
+    outline: none;
+    text-decoration: none;
+    transition: background-color 0.2s ease-out, color 0.2s ease-out;
+}
+
+/*Opmaak nieuwsbrief bevestigings button in de footer*/
+.nieuwsbrief:hover,
+.nieuwsbrief:active{
+    background-color: #fff;
+    color: #000;
+    transition: background-color 0.3s ease-in, color 0.3s ease-in;
+    cursor: pointer;
+}
+/*Einde NIEUWSBRIEF kolom*/
+
+/*Opmaak rechterkolom in de footer, copyright en logo in het klein*/
+.column4of4{
+    background-image: url(images/Logo%20white.png);
+    background-position: 150px 30px;
+    background-size: 150px;
+    background-repeat: no-repeat;
+    width: 300px;
+    float: left;
+    margin: 10px;
+    padding-top: 15%;
+    text-align: right;
+}
+
+/*Einde FOOTER*/

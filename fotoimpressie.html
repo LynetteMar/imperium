@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="nl">
+	<head>
+		<meta charset="utf-8">
+		<link href="style.css" type="text/css" rel="stylesheet"> <!--Link naar css bestand-->
+        <link rel="icon" type="image/png" href="images/favicon.png" sizes="32x32" /> <!--Favicon (mini logo naast de title van de website)-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!--Font awesome icoontjes zoals facebook en twitter logo worden hiermee geladen-->
+        <link href="https://fonts.googleapis.com/css?family=Nunito:400,600,700,800,900" rel="stylesheet"> <!--Lettertype van google fonts-->
+        <script type="text/javascript" src="interaction.js"></script> <!--Link naar JavaScript bestand-->
+		<title>Fotoimpressie</title>
+	</head>
+	<body id="fotoimpressie">
+		<div id="page">
+            <!--de pijl in de footer linkt naar de id="top" zodat de bezoeker naar de top gaat als die erop klikt-->
+			<header class="fotoimpressie" id="top">
+                <!--Logo van het Imperium Theater die naar de homepagina gaat als de bezoeker erop klikt-->
+                <a href="home.html"><img src="images/Logo.png" alt="Logo Imperium Theater" id="logo"/></a>
+                <!--begin navigatie-->
+				<nav>
+                    <ul>
+                        <li><a href="home.html"><em>Home</em></a>
+                            <ul>
+                                <li><a href="home.html#over">Over ons</a></li>
+                                <li><a href="home.html#locatie">Locatie</a></li>
+                                <li><a href="home.html#contact">Contact</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="huur.html"><em>Huur</em></a>
+                            <ul>
+                                <li><a href="huur.html#huisregels">Huisregels</a></li>
+                                <li><a href="huur.html#voorwaarden">Voorwaarden</a></li>
+                                <li><a href="huur.html#kosten">Kosten</a></li>
+                                <li><a href="huur.html#huur-aanvraag">Huur aanvragen</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="faciliteiten.html"><em>Faciliteiten</em></a>
+                            <ul>
+                                <li><a href="faciliteiten.html#toneel">Toneel</a></li>
+                                <li><a href="faciliteiten.html#decor">Decor</a></li>
+                                <li><a href="faciliteiten.html#licht">Licht</a></li>
+                                <li><a href="faciliteiten.html#projectie">Projectie</a></li>
+                                <li><a href="faciliteiten.html#geluid">Geluid</a></li>
+                                <li><a href="faciliteiten.html#afluistering">Afluistering</a></li>
+                                <li><a href="faciliteiten.html#overig">Overig</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="fotoimpressie.html" class="current-nav"><em>Fotoimpressie</em></a>
+                            <ul>
+                                <li><a href="fotoimpressie.html#theater">Theater</a></li>
+                                <li><a href="fotoimpressie.html#voorstellingen">Voorstellingen</a></li>
+                                <li><a href="fotoimpressie.html#posters">Posters</a></li>
+                            </ul>
+                        </li>
+                        <!--Begin zoek balk-->
+                         <li>
+                            <form class="search" action="<http://www.example.org/search.php">
+                            <input class="search-input" type="search" name="search" placeholder="Zoeken..."/>
+                            <div class="search-submit">
+                                 <button id="search-icon"><i class="fa fa-search"></i></button>
+                            </div>
+                            </form>
+                        </li>
+                        <!--Einde zoek balk-->
+                    </ul>
+                </nav>
+                <!--einde navigatie-->
+                <!--begin shortcut naar huren-->
+                <div class="shortcut">
+                    <p>
+                        Het Imperium Theater is 34 weken per jaar beschikbaar om verhuurd te worden aan toneel-, dans- en muziekgroepen. Ook voor Open Podia en discussiegroepen is het een geschikte ruimte!
+                    </p>
+                    <!--Button die linkt naar de huurpagina-->
+                    <a class="ghost-button" href="huur.html#aanvragen">Nu huren</a>
+                </div>
+                <!--einde shortcut naar huren-->
+                <!--Balk en pijl die linken naar het eerste gedeelte van de content van de pagina-->
+                <div class="scroll-down">
+                    <a href="fotoimpressie.html#theaterzaal"><i class="fa fa-angle-down"></i></a>
+                </div>
+			</header>
+			<div id="content">
+                <section id="theaterzaal">
+                    <!--transparant wit vlak bovenop de afbeelding om de tekst zo beter leesbaar te maken-->
+                    <div id="overlay-theater">
+                    <h1>Theaterzaal</h1>
+                        <!--Begin slideshow met 5 afbeeldingen als erop word geklikt veranderen de rondjes eronder van style-->
+                        <div class="slideshow-container">
+                          <div class="mySlides fade">
+                            <div class="numbertext">1 / 5</div>
+                            <img src="images/toneel/toneel_bovenaanzicht_.jpg">
+                            <div class="text">Voorbereiding voorstelling</div>
+                          </div>
+
+                          <div class="mySlides fade">
+                            <div class="numbertext">2 / 5</div>
+                            <img src="images/toneel/vloer.jpg">
+                            <div class="text">Repetitie voorstelling op de vlakkevloer</div>
+                          </div>
+
+                          <div class="mySlides fade">
+                            <div class="numbertext">3 / 5</div>
+                            <img src="images/toneel/toneel_bovenaanzicht.jpg">
+                            <div class="text">Repetitie voorstelling op de vlakkevloer vanaf de tribune</div>
+                          </div>
+                            
+                          <div class="mySlides fade">
+                            <div class="numbertext">4 / 5</div>
+                            <img src="images/tribune/tribune.jpg">
+                            <div class="text">De tribune vanaf de vlakkevoer</div>
+                          </div>
+
+                          <div class="mySlides fade">
+                            <div class="numbertext">5 / 5</div>
+                            <img src="images/tribune/tribune_zitplaatsen.jpg">
+                            <div class="text">Vooraanzicht van de tribune</div>
+                          </div>
+                          <!--Twee pijlen, links en rechts om naar de volgende of vorige afbeelding te gaan-->
+                          <a class="prev" onclick="plusSlides(-1)">&#9001;</a><!--HTML Entity (Decimal) voor linkerpijl-->
+                          <a class="next" onclick="plusSlides(1)">&#9002;</a><!--HTML Entity (Decimal) voor rechterpijl-->
+                        </div>
+                        <!--Einde slideshow met 5 afbeeldingen-->
+                        <br>
+                        <!--Begin 5 rondjes die gelinkt zijn aan de 5 afbeeldingen-->
+                        <div>
+                            <span class="dot" onclick="currentSlide(1)"></span> 
+                            <span class="dot" onclick="currentSlide(2)"></span> 
+                            <span class="dot" onclick="currentSlide(3)"></span>
+                            <span class="dot" onclick="currentSlide(4)"></span> 
+                            <span class="dot" onclick="currentSlide(5)"></span> 
+                        </div>
+                        <!--Einde 5 rondjes die gelinkt zijn aan de 5 afbeeldingen-->
+                    </div>
+                </section>
+                <section id="kijkje">
+                      <h1>Neem een kijkje in de rest van ons theater</h1>
+                        <p>
+                            Theater Imperium is een klein vlakkevloer theater in het hart van Leiden. Een ruime kleedkamer en een gezellige foyer met bediening. De bar is open van anderhalf uur voor tot minimaal anderhalf uur na de voorstelling; gezellig om voor te beschouwen en na te praten.
+                        </p>
+                        <p>
+                            <cite>En daarvoor doen we het. En we doen het goed. Al 60 jaar.</cite>
+                        </p>
+                </section>
+                <!--Gedeelte met links die linken naar de faciliteiten pagina-->
+                <aside id="aside-links">
+                    <ul>
+                        <li><a href="faciliteiten.html#toneel"><h2>Informatie over alle faciliteiten</h2></a></li>
+                        <li><a href="faciliteiten.html#toneel">Toneel</a></li>
+                        <li><a href="faciliteiten.html#decor">Decor</a></li>
+                        <li><a href="faciliteiten.html#licht">Licht</a></li>
+                        <li><a href="faciliteiten.html#projectie">Projectie</a></li>
+                        <li><a href="faciliteiten.html#geluid">Geluid</a></li>
+                        <li><a href="faciliteiten.html#afluistering">Afluistering</a></li>
+                        <li><a href="faciliteiten.html#overig">Overig</a></li>
+                    </ul>
+                </aside>
+                <!--9 afbeeldingen die zijn weergegeven, als er op word geklikt opent zich een modal panel-->
+                <section class="images">
+                    <div class="img-row">
+                        <div class="img-col">
+                            <img src="images/foyer/foyer.jpg" onclick="openModal();currentModalSlide(1)">
+                            <figcaption>De foyer</figcaption>
+                        </div>
+                        <div class="img-col">
+                            <img src="images/foyer/foyer1.jpg" onclick="openModal();currentModalSlide(2)">
+                            <figcaption>De bar in de foyer</figcaption>
+                        </div>
+                        <div class="img-col">
+                            <img src="images/techniek/Techniekhok_overzicht_web1.jpg" onclick="openModal();currentModalSlide(3)">
+                            <figcaption>Techniekhok</figcaption>
+                        </div>
+                        <div class="img-col">
+                            <img src="images/techniek/geluidtechniek.jpg" onclick="openModal();currentModalSlide(4)">
+                            <figcaption>Geluidtechniek</figcaption>
+                        </div>
+                        <div class="img-col">
+                            <img src="images/lichttechniek.jpg" onclick="openModal();currentModalSlide(5)">
+                            <figcaption>Lichttechniek</figcaption>
+                        </div>
+                        <div class="img-col">
+                            <img src="images/licht-geel-wit-blauw.jpg" onclick="openModal();currentModalSlide(6)">
+                            <figcaption>Pinspot met 2 kleurenfilterssets</figcaption>
+                        </div>
+                        <div class="img-col">
+                            <img src="images/licht-rood-blauw.jpg" onclick="openModal();currentModalSlide(7)">
+                            <figcaption>ADB F101 fresnel 1kW</figcaption>
+                        </div>
+                        <div class="img-col">
+                            <img src="images/kleedkamer21.jpg" onclick="openModal();currentModalSlide(8)">
+                            <figcaption>Kleedkamer</figcaption>
+                        </div>
+                        <div class="img-col">
+                            <img src="images/ontvangst.jpg" onclick="openModal();currentModalSlide(9)">
+                            <figcaption>Ontvangsthal</figcaption>
+                        </div>
+                    </div>
+                    <!--Begin modal panel-->
+                    <div id="myModal" class="modal">
+                        <span class="close cursor" onclick="closeModal()">&times;</span>
+                        <!--Begin modal panel inhoud-->
+                        <div class="modal-content">
+                            <!--Afbeelding/Slide 1-->  
+                            <div class="myModalSlides">
+                                <div class="numbertext">1 / 9</div>
+                                <img src="images/foyer/foyer.jpg">
+                                <figcaption>De foyer</figcaption>
+                            </div>
+                            <!--Afbeelding/Slide 2--> 
+                            <div class="myModalSlides">
+                                <div class="numbertext">2 / 9</div>
+                                <img src="images/foyer/foyer1.jpg">
+                                <figcaption>De bar in de foyer</figcaption>
+                            </div>
+                            <!--Afbeelding/Slide 3--> 
+                            <div class="myModalSlides">
+                                <div class="numbertext">3 / 9</div>
+                                <img src="images/techniek/Techniekhok_overzicht_web1.jpg">
+                                <figcaption>Techniekhok</figcaption>
+                            </div>
+                            <!--Afbeelding/Slide 4--> 
+                            <div class="myModalSlides">
+                                <div class="numbertext">4 / 9</div>
+                                <img src="images/techniek/geluidtechniek.jpg">
+                                <figcaption>Geluidtechniek</figcaption>
+                            </div>
+                            <!--Afbeelding/Slide 5--> 
+                            <div class="myModalSlides">
+                                <div class="numbertext">5 / 9</div>
+                                <img src="images/lichttechniek.jpg">
+                                <figcaption>Lichttechniek</figcaption>
+                            </div> 
+                            <!--Afbeelding/Slide 6--> 
+                            <div class="myModalSlides">
+                                <div class="numbertext">6 / 9</div>
+                                <img src="images/licht-geel-wit-blauw.jpg">
+                                <figcaption>Pinspot met 2 kleurenfilterssets</figcaption>
+                            </div>
+                            <!--Afbeelding/Slide 7--> 
+                            <div class="myModalSlides">
+                                <div class="numbertext">7 / 9</div>
+                                <img src="images/licht-rood-blauw.jpg">
+                                <figcaption>ADB F101 fresnel 1kW</figcaption>
+                            </div>
+                            <!--Afbeelding/Slide 8--> 
+                            <div class="myModalSlides">
+                                <div class="numbertext">8 / 9</div>
+                                <img src="images/kleedkamer21.jpg">
+                                <figcaption>Kleedkamer</figcaption>
+                            </div>
+                            <!--Afbeelding/Slide 9--> 
+                            <div class="myModalSlides">
+                                <div class="numbertext">9 / 9</div>
+                                <img src="images/ontvangst.jpg">
+                                <figcaption>Ontvangsthal</figcaption>
+                            </div>
+                            <!--Twee pijlen, links en rechts om naar de volgende of vorige afbeelding te gaan-->
+                            <a class="prev" id="modal" onclick="plusModalSlides(-1)">&#9001;</a><!--HTML Entity (Decimal) voor linkerpijl-->
+                            <a class="next" id="modal" onclick="plusModalSlides(1)">&#9002;</a><!--HTML Entity (Decimal) voor rechterpijl-->
+                        </div>
+                        <!--Einde modal panel inhoud-->
+                    </div>
+                    <!--Einde modal panel-->
+                </section>
+			</div>
+			<footer>
+                <div id="footer" class="container">
+                    <div class="column1of4">
+                        <h3>Kom met ons in contact</h3>
+                        <p><em>Telefoon:</em><a href="tel:+31715141035"> 071 51 41 035</a></p>
+                        <p><em>Email:</em><a href="mailto:info@imperiumtheater.nl" target="_blank"> info@imperiumtheater.nl</a></p>
+                        <p>
+                            Kom met ons in contact en ervaar zelf de gezelligheid van het theater!
+                        </p>
+                    </div>
+                    <div class="column2of4">
+                        <h3>Volg ons</h3>
+                        <!--Fa fa font, twitter en facebook logo's-->
+                        <p>
+                            <a class="twitter" href="https://twitter.com/imperiumtheater" target="_blank"><i class="fa fa-twitter"></i></a> 
+                            <a class="facebook" href="https://www.facebook.com/ToneelgroepImperium?fref=ts" target="_blank" ><i class="fa fa-facebook"></i></a>
+                        </p>
+                    </div>
+                    <div class="column3of4" id="nieuwsbrief">
+                        <h3>Nieuwsbrief</h3>
+                        <form action="http://www.example.org/subscribe.php">
+                            <p>
+                                U ontvangt onze nieuwsbrief na het bevestigen van de bevestigingsemail.
+                            </p>
+                            <br />
+                            <br />
+                            <input class="nieuwsbrief-input" type="email" name="email" placeholder="Jouw email"/>
+                            <input type="submit" class="nieuwsbrief" value="Bevestig"/>
+                        </form>
+                    </div>
+                    <div class="column4of4">
+                        <p>©2017 Theater Imperium<p/>
+                        <p>Design and code by ©Lynette Martina<p/>
+                    </div>
+                    <!--Button en pijl die linken naar de header van de pagina-->
+                    <article id="scroll-up">
+                     <a href="fotoimpressie.html#top">
+                        <i class="fa fa-angle-up"></i>
+                     </a>
+                    </article>
+                </div>
+			</footer>
+		</div>
+	</body>
+<html>

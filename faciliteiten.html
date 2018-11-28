@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="nl">
+	<head>
+		<meta charset="utf-8">
+		<link href="style.css" type="text/css" rel="stylesheet"> <!--Link naar css bestand-->
+        <link rel="icon" type="image/png" href="images/favicon.png" sizes="32x32" /> <!--Favicon (mini logo naast de title van de website)-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!--Font awesome icoontjes zoals facebook en twitter logo worden hiermee geladen-->
+        <link href="https://fonts.googleapis.com/css?family=Nunito:400,600,700,800,900" rel="stylesheet"> <!--Lettertype van google fonts-->
+        <script type="text/javascript" src="interaction.js"></script> <!--Link naar JavaScript bestand-->
+		<title>Faciliteiten</title>
+	</head>
+	<body id="faciliteiten">
+		<div id="page">
+            <!--de pijl in de footer linkt naar de id="top" zodat de bezoeker naar de top gaat als die erop klikt-->
+			<header class="faciliteiten" id="top">
+                <!--Logo van het Imperium Theater die naar de homepagina gaat als de bezoeker erop klikt-->
+                <a href="home.html"><img src="images/Logo.png" alt="Logo Imperium Theater" id="logo"/></a>
+                <!--begin navigatie-->
+				<nav>
+                    <ul>
+                        <li><a href="home.html"><em>Home</em></a>
+                            <ul>
+                                <li><a href="home.html#over">Over ons</a></li>
+                                <li><a href="home.html#locatie">Locatie</a></li>
+                                <li><a href="home.html#contact">Contact</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="huur.html"><em>Huur</em></a>
+                            <ul>
+                                <li><a href="huur.html#huisregels">Huisregels</a>
+                                </li>
+                                <li><a href="huur.html#voorwaarden">Voorwaarden</a>
+                                </li>
+                                <li><a href="huur.html#kosten">Kosten</a></li>
+                                <li><a href="huur.html#huur-aanvraag">Huur aanvragen</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="faciliteiten.html" class="current-nav"><em>Faciliteiten</em></a>
+                            <ul>
+                                <li><a href="faciliteiten.html#toneel">Toneel</a></li>
+                                <li><a href="faciliteiten.html#decor">Decor</a></li>
+                                <li><a href="faciliteiten.html#licht">Licht</a></li>
+                                <li><a href="faciliteiten.html#projectie">Projectie</a></li>
+                                <li><a href="faciliteiten.html#geluid">Geluid</a></li>
+                                <li><a href="faciliteiten.html#afluistering">Afluistering</a></li>
+                                <li><a href="faciliteiten.html#overig">Overig</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="fotoimpressie.html"><em>Fotoimpressie</em></a>
+                            <ul>
+                                <li><a href="fotoimpressie.html#theater">Theater</a></li>
+                                <li><a href="fotoimpressie.html#voorstellingen">Voorstellingen</a></li>
+                                <li><a href="fotoimpressie.html#posters">Posters</a></li>
+                            </ul>
+                        </li>
+                        <!--Begin zoek balk-->
+                         <li>
+                            <form class="search" action="<http://www.example.org/search.php">
+                            <input class="search-input" type="search" name="search" placeholder="Zoeken..."/>
+                            <div class="search-submit">
+                                 <button id="search-icon"><i class="fa fa-search"></i></button>
+                            </div>
+                            </form>
+                        </li>
+                        <!--Einde zoek balk-->
+                    </ul>
+                </nav>
+                <!--einde navigatie-->
+                <!--begin shortcut naar huren-->
+                <div class="shortcut">
+                    <p>
+                        Het Imperium Theater is 34 weken per jaar beschikbaar om verhuurd te worden aan toneel-, dans- en muziekgroepen. Ook voor Open Podia en discussiegroepen is het een geschikte ruimte!
+                    </p>
+                    <!--Button die linkt naar de huurpagina-->
+                    <a class="ghost-button" href="huur.html#aanvragen">Nu huren</a>
+                </div>
+                <!--einde shortcut naar huren-->
+                <!--Balk en pijl die linken naar het eerste gedeelte van de content van de pagina-->
+                <div class="scroll-down">
+                    <a href="#toneel"><i class="fa fa-angle-down"></i></a>
+                </div>
+			</header>
+			<div id="content">
+                <section id="toneel">
+                    <h1>Toneel</h1>
+                    <p>
+                        Het toneel heeft een speelvlak van 6 meter diep en 7 meter breed waarboven op ongeveer 6 meter een grit voor het ophangen van spots is gemaakt. Aan 3 zijden van het speelvlak hangen tot aan het grit zwarte gordijnen. Het zwarte achterdoek heeft rechts een opening naar een kleine ruimte voor eventuele opkomsten. De vloer is standaard voorzien worden van een zwarte balletvloer.
+                    </p>
+                </section>
+                <section id="decor">
+                    <h1>Decor</h1>
+                    <p>
+                        In verband met de lengte van de spots is de maximale decorhoogte 5 meter. Voor decorstukken die aan het grit moeten hangen verwachten wij dat de groep – in overleg met de dienstdoende technicus – zelf voor een constructie zorgt die afdoende sterk is. Wij dragen geen verantwoordelijkheid voor het knappen van touwtjes en dergelijke en de gevolgen daarvan. Verder dient het decor brandwerend gemaakt te zijn.
+                    </p>
+                </section>
+                <section id="licht">
+                    <!--transparant wit vlak bovenop de afbeelding om de tekst zo beter leesbaar te maken-->
+                    <div class="overlay-white">
+                        <h1>Licht</h1>
+                        <p>
+                            Het lichtgrid bestaat uit een truss-systeem waardoor boven het gehele speelvlak verlichting aangebracht kan worden. Boven het speelvlak kan gesteld worden vanaf een rolsteiger, boven de tribune gebeurt dit met een ladder. Het grit is voorzien van 64 prikpunten. Verder is het mogelijk vloeraansluitingen aan te brengen en er zijn 3 vaste spanning contacten (220 Volt) rondom het speelvlak.
+                        </p>
+                        <br />
+                        <article class="specifiacties">
+                            <!--De knop van het accordion-->
+                            <button class="accordion">
+                                <h3>Sturing</h3>
+                            </button>
+                            <!--De inhoud van het accordion die zichtbaar word als er op de button wordt geklikt-->
+                            <div class="panel">
+                                <table>
+                                    <tr>
+                                        <td>Zero 88 Fat Frog 48-kanaals lichttafel</td>
+                                    </tr>
+                                    <tr>
+                                        <td>24-kanaals Strand Lighting wanddimmer (24 x 2.5kW)</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2x 6-kanaals Strand Lighting dimmerpack</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Dimmers en tafel aangestuurd met 5-polig DMX</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Pegasus D-Pro 12 Relay pack DMX, 12x 2,5kW</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Elation DMX-16SW Switch controller</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Showtec DMX Splitter en Booster + krachtstroomaansluiting in de zaal</td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <!--De knop van het accordion-->
+                            <button class="accordion">
+                                <h3>Lampen</h3>
+                            </button>
+                            <!--De inhoud van het accordion die zichtbaar word als er op de button wordt geklikt-->
+                            <div class="panel">
+                                <table>
+                                    <tr>
+                                        <th scope="col"></th>
+                                        <th scope="col">Specificatie</th>
+                                        <th scope="col">Aantal</th>
+                                        <th scope="col">Opmerkingen</th>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row" rowspan="3">Vaste basis*</th>
+                                        <td>Front: ADB F101 fresnel 1kW</td>
+                                        <td>6</td>
+                                        <td>in twee delen, voor en achter</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Eventueel extra front: ADB fresnel 1kW</td>
+                                        <td>6</td>
+                                        <td>in twee delen, voor en achter</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Tegen: ADB F101 fresnel 1kW</td>
+                                        <td>6</td>
+                                        <td>2×3 voor 2 verschillende kleuren</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row" rowspan="2">Fresnel</th>
+                                        <td>ADB A57F fresnel – 650 W</td>
+                                        <td>2</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Strand Quartet (fresnel) – 650 W</td>
+                                        <td>2</td>
+                                        <td>met barndoors</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row" rowspan="2">PC</th>
+                                        <td>Strand Quartet (PC) – 650 W</td>
+                                        <td>8</td>
+                                        <td>met barndoors bijv. voor zijlicht</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Selecon PC 650 W</td>
+                                        <td>2</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row" rowspan="3">Profiel</th>
+                                        <td>Selecon SPX Zoomspot 600 W</td>
+                                        <td>10</td>
+                                        <td>met zoom, shutters en iris</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Strand SL profielspot 600 W</td>
+                                        <td>1</td>
+                                        <td>met zoom, shutters en iris</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Strand Quartet 22/40 profielspot 650 W</td>
+                                        <td>4</td>
+                                        <td>met zoom (shutters en iris niet bij elke lamp)</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row" rowspan="4">Overige lampen</th>
+                                        <td>PAR64/56 medium 300 </td>
+                                        <td>10</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>PAR36 Pinspot met 2 kleurenfilterssets</td>
+                                        <td>4</td>
+                                        <td>(rood, geel, blauw, groen en azure-blauw (vaste spanning, niet dimbaar)</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Showtec Active Sunstrip DMX (10x75W)*</td>
+                                        <td>6</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Blacklight TL*</td>
+                                        <td>2</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row" rowspan="1">Lichtfilters</th>
+                                        <td>Kleurfilters merk LEE*</td>
+                                        <td></td>
+                                        <td>grote sortering aanwezig van meest gebruikte filters</td>
+                                    </tr>
+                                </table>
+                                <p>*Vooraf overleg met dienstdoende technicus noodzakelijk</p>
+                            </div>
+                        </article>
+                    </div>
+                </section>
+                <section id="projectie">
+                    <h1>Projectie</h1>
+                    <p>
+                        In Imperium is een beamer aanwezig die tegen een meerprijs te huren is. Deze kan in de truss gehangen worden met behulp van een statief of eventueel op het podium gebruikt worden. Bekabeling hiervoor is aanwezig. Er is geen officieel beamerdoek aanwezig, wel twee formaten gespannen doek die kunnen worden opgehangen en waarop kan worden geprojecteerd. De beamer is aan te sturen vanuit het techniekhok. In het techniekhok is een computer aanwezig, maar het is aanbevolen om een eigen laptop mee te nemen (er zijn geen verloopstekkers voor bijv. MacBooks aanwezig). Er kan gebruik gemaakt worden van de WIFI-verbinding in Imperium.
+                    </p>
+                    <br />
+                    <article class="specifiacties">
+                        <!--De knop van het accordion-->
+                        <button class="accordion">
+                            <h3>Specificaties projectie</h3>
+                        </button>
+                        <!--De inhoud van het accordion die zichtbaar word als er op de button wordt geklikt-->
+                        <div class="panel">
+                            <table>
+                                <tr>
+                                    <th scope="col"></th>
+                                    <th scope="col">Specificatie</th>
+                                    <th scope="col">Opmerkingen</th>
+                                </tr>
+                                <tr>
+                                    <th scope="row" rowspan="4">Beamer en toebehorende</th>
+                                    <td>Beamer NEC VT695, 2500 ANSI</td>
+                                    <td>Tegen meerprijs te huren</td>
+                                </tr>
+                                <tr>
+                                    <td>Beamerstatief om beamer aan lichtgrid te hangen</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>SVGA-kabel naar techniekhok</td>
+                                    <td>Geen verloopstekkers aanwezig</td>
+                                </tr>
+                                <tr>
+                                    <td>2 formaten projectiedoek</td>
+                                    <td>Katoen gespannen op houten frame</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" rowspan="1">Computer</th>
+                                    <td>Dell computer. Optiplex GX 620. 2.8 GHz, 2GB RAM, DVD-speler, VGA output</td>
+                                    <td>Kan aangesloten worden op beamer, geluidskaart aangesloten op mengpaneel. Met internetverbinding</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </article>
+                </section>
+                <section id="geluid">
+                    <!--transparant wit vlak bovenop de afbeelding om de tekst zo beter leesbaar te maken-->
+                    <div class="overlay-white">
+                        <h1>Geluid</h1>
+                        <p>
+                            Boven het speelvlak hangen achter in de hoeken twee boxen gericht op het publiek. Achter de tribune hangen twee boxen als achterkanaal en onder de tribune staat een actieve subwoofer. Het geluid wordt aangestuurd vanuit het techniekhok. Er is in Imperium een piano van redelijke kwaliteit. Op kosten van de huurder kan deze gestemd worden.
+                        </p>
+                        <br />
+                        <article class="specifiacties">
+                            <!--De knop van het accordion-->
+                            <button class="accordion">
+                                <h3>Specificaties geluidstechniek</h3>
+                            </button>
+                            <!--De inhoud van het accordion die zichtbaar word als er op de button wordt geklikt-->
+                            <div class="panel">
+                                <table>
+                                    <tr>
+                                        <th scope="col"></th>
+                                        <th scope="col">Specificatie</th>
+                                        <th scope="col">Opmerkingen</th>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row" rowspan="1">FOHMixer*</th>
+                                        <td>Allen &amp; Heath MixWizard WZ3 14:4:2, 14 mono-kanalen, 2 stereo-kanalen, 6 Aux per kanaal, 4 submasters, Stereo Master (front+sub), 2 Matrix (rear)</td>
+                                        <td><a href="http://www.allen-heath.com/product-finder/" target="_blank">Meer informatie</a></td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row" rowspan="3">Voorkanaal</th>
+                                        <td>Versterker: NSX TR 11.2 [2x500W@8ohm stereo]</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Processor: Hortus CT2.1 Speaker Management Controller</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Speakers: Hortus Audio S10.1 – [10"/1" - 85Hz-20kHz (-6dB) - 250W@8ohm - 122dB SPL]</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row" rowspan="2">Achterkanaal</th>
+                                        <td>Versterker: Crest CPX900 [2x180W@8ohm stereo - Class AB]</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Speakers: dB Technologies Arena 10 – [10"/1" - 95Hz-19kHz (-6dB) - 300W@8ohm -125dB SPL]</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row" rowspan="1">Subwoofer (onder tribune)</th>
+                                        <td>JBL JRX-118SP actieve subwoofer [18" - 55Hz-300Hz (+-3dB) - 123dB SPL@500W]</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row" rowspan="3">Decks</th>
+                                        <td>Dubbele CD-speler – Numark CDN22 MK4</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Minidisc Deck – Sony MDS JES10</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Mini-jack aansluitingen voor iPod/laptop/media-speler</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row" rowspan="4">Microfoons</th>
+                                        <td>Sennheiser micofoon E835</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Sennheiser MZQ 1 microfoonhouder</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>K&amp;M 278 microfoonstatief</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>AKG WMS 40 Mini2 Dual Vocal draadloze handheldmicrofoonset</td>
+                                        <td>2 stuks</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row" rowspan="2">Overig geluid</th>
+                                        <td>DAP Audio – multikabel XLR 12-in 4-uit</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Stereo DI-box – Behringer ULTRA-DI DI20</td>
+                                        <td><a href="http://www.music-group.com/Categories/Behringer/Signal-Processors/DI-Boxes/DI20/p/P0176" target="_blank">Meer informatie</a></td>
+                                    </tr>
+                                </table>
+                                <p>*Vooraf overleg met dienstdoende technicus noodzakelijk</p>
+                            </div>
+                        </article>
+                    </div>
+                </section>
+                <section id="afluistering">
+                    <h1>Afluistering</h1>
+                    <p>
+                        Het techniekhok is geluidsdicht gescheiden van de zaal. Aan de achterste truss hangen twee hoogwaardige omni-directionele microfoons (Rode NT55, matched pair) die stereo worden doorgevoerd naar twee Fostex monitoren en een Shure hoofdtelefoon.
+                        In de kleedkamer is geluid en beeld uit de zaal beschikbaar. Hier kan tevens een iPod worden aangesloten op de monitoring.
+                    </p>
+                </section>
+                <section id="overig">
+                    <h1>Overig</h1>
+                    <article class="specifiacties">
+                        <table>
+                            <tr>
+                                <th scope="col"></th>
+                                <th scope="col">Specificatie</th>
+                                <th scope="col">Opmerkingen</th>
+                            </tr>
+                            <tr>
+                                <th scope="row" rowspan="2">Effecten*</th>
+                                <td>Antari Z-1500 MK II DMX rookmachine </td>
+                                <td><a href="http://www.http://antari.com/" target="_blank">Meer informatie</a></td>
+                            </tr>
+                            <tr>
+                                <td>Spiegelbol 50cm met motor</td>
+                                <td></td>
+                            </tr>
+                        </table>
+                        <p>*Vooraf overleg met dienstdoende technicus noodzakelijk</p>
+                    </article>
+                </section>
+			</div>
+			<footer>
+                <div id="footer" class="container">
+                    <div class="column1of4">
+                        <h3>Kom met ons in contact</h3>
+                        <p><em>Telefoon:</em><a href="tel:+31715141035"> 071 51 41 035</a></p>
+                        <p><em>Email:</em><a href="mailto:info@imperiumtheater.nl" target="_blank"> info@imperiumtheater.nl</a></p>
+                        <p>
+                            Kom met ons in contact en ervaar zelf de gezelligheid van het theater!
+                        </p>
+                    </div>
+                    <div class="column2of4">
+                        <h3>Volg ons</h3>
+                        <!--Fa fa font, twitter en facebook logo's-->
+                        <p>
+                            <a class="twitter" href="https://twitter.com/imperiumtheater" target="_blank"><i class="fa fa-twitter"></i></a> 
+                            <a class="facebook" href="https://www.facebook.com/ToneelgroepImperium?fref=ts" target="_blank" ><i class="fa fa-facebook"></i></a>
+                        </p>
+                    </div>
+                    <div class="column3of4" id="nieuwsbrief">
+                        <h3>Nieuwsbrief</h3>
+                        <form action="http://www.example.org/subscribe.php">
+                            <p>
+                                U ontvangt onze nieuwsbrief na het bevestigen van de bevestigingsemail.
+                            </p>
+                            <br />
+                            <br />
+                            <input class="nieuwsbrief-input" type="email" name="email" placeholder="Jouw email"/>
+                            <input type="submit" class="nieuwsbrief" value="Bevestig"/>
+                        </form>
+                    </div>
+                    <div class="column4of4">
+                        <p>©2017 Theater Imperium<p/>
+                        <p>Design and code by ©Lynette Martina<p/>
+                    </div>
+                    <!--Button en pijl die linken naar de header van de pagina-->
+                    <article id="scroll-up">
+                     <a href="faciliteiten.html#top">
+                        <i class="fa fa-angle-up"></i>
+                     </a>
+                    </article>
+                </div>
+			</footer>
+		</div>
+	</body>
+<html>
